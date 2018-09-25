@@ -59,11 +59,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextButtonClick(View view){
-        Toast.makeText(this,"Next button has been clicked...",Toast.LENGTH_SHORT).show();
+        Snackbar.make(view, "Next button has been clicked...", Snackbar.LENGTH_SHORT).show();
     }
 
     public void backButtonClick(View view){
-        Snackbar.make(view, "Back button has been clicked...", Snackbar.LENGTH_SHORT).show();
+        Toast.makeText(this,"Back button has been clicked...",Toast.LENGTH_SHORT).show();
+
     }
 
 }
